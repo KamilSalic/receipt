@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light"/>
+    <meta name="supported-color-scheme" content="light"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -95,6 +97,20 @@
           background-color: #ffffff !important;
         }
       }
+      @media (max-width: 600px) {
+        .mobile-padding {
+          padding-right: 10px !important;
+          padding-left: 10px !important;
+        }
+      }
+      @media (max-width: 380px) {
+     .item-description-first-row, .item-description-second-row {
+      font-size: 14px !important;
+     }
+     .prada-handbag-image, .adidas-shoes-image {
+      width: 100px !important;
+     }
+      }
     </style>
   </head>
   <body
@@ -111,7 +127,7 @@
     "
   >
     <!--[if (gte mso 9)|(IE)]>
-    <table width="600" align="center">
+    <table width="600" align="center" role="presentation">
       <tr>
         <td>
           <![endif]-->
@@ -122,7 +138,7 @@
       border="0"
       class="main-table"
       width="600"
-      style="background-color: #000000; background: #000000; max-width: 600px"
+      style="background-color: #000000; background: #000000; max-width: 600px; width: 100%;"
       role="presentation"
     >
       <tr>
@@ -148,16 +164,22 @@
             border="0"
           />
           <table
+            class="top-text-table"
             cellpadding="0"
             cellspacing="0"
             align="center"
             border="0"
-            width="504"
-            style="margin-bottom: 1em; margin-right: 3em; margin-left: 3em"
+            width="100%"
+            style="max-width: 504px;"
             role="presentation"
           >
             <tr>
-              <td style="margin: 0; padding: 0; padding-top: 4em">
+              <td class="mobile-padding" style="margin: 0; padding-top: 4em; padding-bottom: 1em;">
+                <!--[if (gte mso 9)|(IE)]>
+                <table role="presentation" align="center" width="504">
+                  <tr>
+                    <td style="text-align: left;">
+                      <![endif]-->
                 <p style="color: #ffffff; text-align: left; margin-bottom: 1em">
                   Hey Brandon Smith,
                 </p>
@@ -179,6 +201,11 @@
                   Questions or concerns? Drop us a line at 
                   <a style="color:#ffffff;" href="mailto:support@topshoes.com">support@topshoes.com</a>
                 </p>
+                <!--[if (mso gte 9)|(IE)]>
+                </td>
+              </tr>
+            </table>
+          <![endif]-->
               </td>
             </tr>
           </table>
@@ -192,27 +219,29 @@
             </table>
           <![endif]-->
           <table
+            class="order-details-table"
             cellpadding="0"
             cellspacing="0"
             border="0"
             align="center"
-            style="
-              margin-bottom: 1em;
-              margin-right: 3em;
-              margin-left: 3em;
-              width: 504px;
-            "
+            width="100%"
+            style="max-width: 504px; table-layout: fixed;"
             role="presentation"
           >
             <tr>
-              <td>
+              <td class="mobile-padding" style="padding-bottom: 1em;">
+                    <!--[if (gte mso 9)|(IE)]>
+                <table role="presentation" align="center" width="504">
+                  <tr>
+                    <td>
+                      <![endif]-->
                 <table
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
-                  style="width: 100%"
-                  role="presentation"
                   align="center"
+                  role="presentation"
+                  style="width: 100%; table-layout: fixed;"
                 >
                   <tr>
                     <td style="width: 50%">
@@ -246,6 +275,7 @@
                   style="width: 100%"
                   role="presentation"
                   align="center"
+                  style="table-layout: fixed;"
                 >
                   <tr>
                     <td align="center"
@@ -258,7 +288,7 @@
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
-                  style="width: 100%"
+                  style="width: 100%; table-layout: fixed;"
                   role="presentation"
                   align="center"
                 >
@@ -291,16 +321,18 @@
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
-                  style="width: 100%"
+                  style="width: 100%; table-layout: fixed;"
                   layout="fixed"
                   role="presentation"
                   align="center"
                 >
                   <tr>
-                    <td style="width: 50%; padding-top: 3em">
-                      <p style="color: #ffffff; margin-top: 2em">Item</p>
+                    <td style="width: 70%; padding-top: 3em">
+                      <p style="color: #ffffff; margin-top: 2em; text-align: left;">
+                        Item
+                      </p>
                     </td>
-                    <td style="width: 25%; padding-top: 3em">
+                    <td style="width: 10%; padding-top: 3em">
                       <p
                         style="
                           color: #ffffff;
@@ -311,7 +343,7 @@
                         Qty
                       </p>
                     </td>
-                    <td style="width: 25%; padding-top: 3em">
+                    <td style="width: 20%; padding-top: 3em">
                       <p
                         style="
                           color: #ffffff;
@@ -328,7 +360,7 @@
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
-                  style="margin-top: 0.5em; width: 100%"
+                  style="margin-top: 0.5em; width: 100%; table-layout: fixed;"
                   role="presentation"
                   align="center"
                 >
@@ -349,17 +381,19 @@
                   </table>
                 <![endif]-->
                 <table
+                  class="item-description-first-row"
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
-                  style="width: 100%"
+                  style="width: 100%; table-layout: fixed;"
                   layout="fixed"
                   role="presentation"
                   align="center"
                 >
                   <tr>
-                    <td style="width: 25%">
+                    <td style="width: 35%; text-align: left;">
                       <img
+                      class="adidas-shoes-image"
                         width="126"
                         height="80"
                         style="width: 126px; margin-top: 2em"
@@ -368,7 +402,7 @@
                         border="0"
                       />
                     </td>
-                    <td style="width: 25%">
+                    <td style="width: 35%">
                       <p
                         style="
                           color: #ffffff;
@@ -379,7 +413,7 @@
                         Adidas Originals <br />Superstar White
                       </p>
                     </td>
-                    <td style="width: 25%">
+                    <td style="width: 10%">
                       <p
                         style="
                           color: #ffffff;
@@ -390,7 +424,7 @@
                         1
                       </p>
                     </td>
-                    <td style="width: 25%">
+                    <td style="width: 20%">
                       <p
                         style="
                           color: #ffffff;
@@ -416,7 +450,7 @@
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
-                  style="margin-top: 0.5em; width: 100%"
+                  style="margin-top: 0.5em; width: 100%; table-layout: fixed;"
                   role="presentation"
                   align="center"
                 >
@@ -436,18 +470,20 @@
                     </tr>
                   </table>
                 <![endif]-->
-                <table
+                <table 
+                class="item-description-second-row"
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
-                  style="width: 100%"
+                  style="width: 100%; table-layout: fixed;"
                   layout="fixed"
                   role="presentation"
                   align="center"
                 >
                   <tr>
-                    <td style="width: 25%">
+                    <td style="width: 35%; text-align: left;">
                       <img
+                      class="prada-handbag-image"
                         width="126"
                         height="80"
                         style="width: 126px; margin-top: 2em"
@@ -456,7 +492,7 @@
                         border="0"
                       />
                     </td>
-                    <td style="width: 25%">
+                    <td style="width: 35%">
                       <p
                         style="
                           color: #ffffff;
@@ -467,7 +503,7 @@
                         Prada Handbag <br />Leather Casual
                       </p>
                     </td>
-                    <td style="width: 25%">
+                    <td style="width: 10%">
                       <p
                         style="
                           color: #ffffff;
@@ -478,7 +514,7 @@
                         1
                       </p>
                     </td>
-                    <td style="width: 25%">
+                    <td style="width: 20%">
                       <p
                         style="
                           color: #ffffff;
@@ -504,7 +540,7 @@
                   cellpadding="0"
                   cellspacing="0"
                   border="0"
-                  style="margin-top: 0.5em; margin-bottom: 3em; width: 100%"
+                  style="margin-top: 0.5em; margin-bottom: 3em; width: 100%; table-layout: fixed;"
                   role="presentation"
                 >
                   <tr>
@@ -524,6 +560,11 @@
                     </td>
                   </tr>
                 </table>
+                 <!--[if (mso gte 9)|(IE)]>
+                </td>
+              </tr>
+            </table>
+          <![endif]-->
               </td>
             </tr>
           </table>
@@ -532,9 +573,10 @@
             cellpadding="0"
             cellspacing="0"
             border="0"
-            width="504"
-            style="background-color: #000000; background: #000000"
+            width="100%"
+            style="background-color: #000000; background: #000000; max-width: 504px; table-layout: fixed;"
             role="presentation"
+
           >
             <tr>
               <td style="padding-top: 4em">
@@ -560,6 +602,7 @@
                     background-color: #000000;
                     background: #000000;
                     margin-top: 1em;
+                    table-layout: fixed;
                   "
                   layout="fixed"
                   role="presentation"
@@ -645,6 +688,7 @@
                     background-color: #000000;
                     background: #000000;
                     margin-bottom: 1em;
+                    table-layout: fixed;
                   "
                   layout="fixed"
                   role="presentation"
@@ -687,7 +731,7 @@
                         cellpadding="0"
                         cellspacing="0"
                         border="0"
-                        style="width: 100%; text-align: center"
+                        style="width: 100%; text-align: center;table-layout: fixed;"
                         role="presentation"
                       >
                         <tr>
@@ -739,7 +783,7 @@
                           margin-top: 1em;
                         "
                       >
-                        All rights reserved ©2021 KamilSalic
+                        All rights reserved ©2022 KamilSalic
                       </p>
                     </td>
                   </tr>
